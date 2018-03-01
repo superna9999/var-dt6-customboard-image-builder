@@ -1,12 +1,12 @@
 #!/bin/bash
 set -x
-export PATH=$PWD/../gcc-linaro-7.1.1-2017.08-x86_64_arm-linux-gnueabihf/bin:$PATH
+export PATH=$PWD/gcc-linaro-7.1.1-2017.08-x86_64_arm-linux-gnueabihf/bin:$PATH
 #RAM=1
 RAM=0
 #PROXY="http://127.0.0.1:3142"
 PROXY=""
 IMAGE_FOLDER="img/"
-IMAGE_VERSION="linux-src"
+IMAGE_VERSION="linux-4.16-rc3"
 IMAGE_DEVICE_TREE="imx6q-var-dt6customboard"
 if [ ! -z "$1" ]; then
 	IMAGE_VERSION="$1"
